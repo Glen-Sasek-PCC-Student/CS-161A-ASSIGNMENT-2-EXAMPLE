@@ -57,24 +57,50 @@ Program Description:
 
 Design:
 A. INPUT
-Define the input variables including name data type. 
+int oreos = 0;
 
 B. OUTPUT
-Define the output variables including data types. 
+double servings = 0.0;
+double calories = 0.0;
 
 C. CALCULATIONS
-Describe calculations used by algorithms in step D.  
-List all formulas. 
-If there are no calculations needed, state there are no calculations.
+const int OREOS_PER_SERVING = 5;
+const int CALORIES_PER_SERVING = 160;
+
+servings = static_cast<double>(oreos) / OREOS_PER_SERVING;
+calories = servings * CALORIES_PER_SERVING;
 
 D. LOGIC and ALGORITHMS
-Design the logic of your program using pseudocode or flowcharts. 
-Use conditionals, loops, functions or array constructs.
-List the steps in transforming inputs into outputs. 
-https://github.com/Glen-Sasek-PCC-Instructor/2025-06-22/blob/main/Pseudocode-Reference.txt
+MESSAGE "Welcome to the Oreo Calculator!"
+PROMPT "Enter the number of Oreos eaten: "
+INPUT oreos
+CALCULATE
+
+DATA oreos
+LABEL "Oreos equals"
+
+DATA servings
+LABEL "servings!"
+
+MESSAGE "You consumed "
+DATA calories
+LABEL "calories."
+
+MESSAGE "Keep eating Oreos!"
 
 
 SAMPLE RUNS
-Copy from assignment document.
+Welcome to the Oreo Calculator!
+Enter the number of Oreos eaten: 12
+12 Oreos equals 2.4 servings!
+You consumed 384.0 calories.
+Keep eating Oreos!
+
+
+Welcome to the Oreo Calculator!
+Enter the number of Oreos eaten: 3
+3 Oreos equals 0.6 servings!
+You consumed 96.0 calories.
+Keep eating Oreos!
 
 */
